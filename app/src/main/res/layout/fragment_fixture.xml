@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:theme="@style/CurvedImageView100"
+        android:id="@+id/image_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_score"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_arrow_right"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/image_home"
+        app:layout_constraintStart_toEndOf="@id/image_home"
+        app:layout_constraintEnd_toStartOf="@id/image_away"
+        tools:text="2-0"/>
+
+    <ImageView
+        android:theme="@style/CurvedImageView100"
+        android:id="@+id/image_away"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintTop_toTopOf="@id/image_home"
+        app:layout_constraintStart_toEndOf="@id/text_score"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/ic_call"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_team_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/image_home"
+        app:layout_constraintEnd_toEndOf="@id/image_home"
+        app:layout_constraintTop_toBottomOf="@id/image_home"
+        tools:text="Arsenal"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/text_score"
+        app:layout_constraintEnd_toEndOf="@id/text_score"
+        app:layout_constraintTop_toTopOf="@id/text_team_home"
+        tools:text="90"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_team_away"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/image_away"
+        app:layout_constraintEnd_toEndOf="@id/image_away"
+        app:layout_constraintTop_toBottomOf="@id/image_away"
+        tools:text="Aston Villa"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_fixture_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:tabBackground="@drawable/shape_curved_rect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_team_home">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/match_detail"
+            android:background="@color/blue"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lineup"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_fixture_detail"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <include layout="@layout/partial_lineup"
+            android:id="@+id/layout_lineup"
+            android:visibility="gone" />
+
+        <include layout="@layout/partial_fixture"
+            android:id="@+id/layout_detail"
+            android:visibility="gone" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

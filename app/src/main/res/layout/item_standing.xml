@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_position"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="#"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_team"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="20"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_team"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/team"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintStart_toEndOf="@id/text_position"
+        app:layout_constraintEnd_toStartOf="@id/text_played"
+        app:layout_constraintTop_toTopOf="@id/text_position"
+        tools:text="Manchester United"
+        tools:drawableStart="@drawable/ic_arrow_right"
+        tools:drawableTint="@color/blue"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_played"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/p"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.075"
+        app:layout_constraintStart_toEndOf="@id/text_team"
+        app:layout_constraintEnd_toStartOf="@id/text_win"
+        app:layout_constraintTop_toTopOf="@id/text_position"
+        tools:text="8" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_win"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/w"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.075"
+        app:layout_constraintStart_toEndOf="@id/text_played"
+        app:layout_constraintEnd_toStartOf="@id/text_draw"
+        app:layout_constraintTop_toTopOf="@id/text_position"
+        tools:text="4" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_draw"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/d"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.075"
+        app:layout_constraintStart_toEndOf="@id/text_win"
+        app:layout_constraintEnd_toStartOf="@id/text_loss"
+        app:layout_constraintTop_toTopOf="@id/text_position"
+        tools:text="1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_loss"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/l"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.075"
+        app:layout_constraintStart_toEndOf="@id/text_draw"
+        app:layout_constraintEnd_toStartOf="@id/text_goal_diff"
+        app:layout_constraintTop_toTopOf="@id/text_position"
+        tools:text="3" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_goal_diff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/gd"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.075"
+        app:layout_constraintStart_toEndOf="@id/text_loss"
+        app:layout_constraintEnd_toStartOf="@id/text_goal_ag"
+        app:layout_constraintTop_toTopOf="@id/text_position"
+        tools:text="22" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_goal_ag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@@string/ga"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.075"
+        app:layout_constraintStart_toEndOf="@id/text_goal_diff"
+        app:layout_constraintEnd_toStartOf="@id/text_point"
+        app:layout_constraintTop_toTopOf="@id/text_position"
+        tools:text="8" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_point"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pts"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.075"
+        app:layout_constraintStart_toEndOf="@id/text_goal_ag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_position"
+        tools:text="24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

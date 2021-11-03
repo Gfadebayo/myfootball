@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_paths"
+    app:startDestination="@id/frag_home">
+
+    <fragment android:id="@+id/frag_home"
+        android:name="com.exzell.myfootball.fragment.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_frag_home_to_frag_fixture"
+            app:destination="@id/frag_fixture" />
+    </fragment>
+
+    <fragment android:id="@+id/frag_detail"
+        android:name="com.exzell.myfootball.fragment.DetailFragment"
+        android:label="Detail" />
+
+    <fragment android:id="@+id/frag_profile"
+        android:name="com.exzell.myfootball.fragment.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment android:id="@+id/frag_standing"
+        android:name="com.exzell.myfootball.fragment.StandingFragment"
+        android:label="Standing"
+        tools:layout="@layout/fragment_standing" />
+
+    <fragment android:id="@+id/frag_fixture"
+        android:name="com.exzell.myfootball.fragment.FixtureFragment"
+        android:label="@string/fixture"
+        tools:layout="@layout/fragment_fixture"/>
+</navigation>

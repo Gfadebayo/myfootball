@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">My Football</string>
+
+    <string name="splash_message">Discover all\nabout sport</string>
+    <string name="splash_sub_message">Search millions of jobs and get the \n inside scoop on companies.\nWait for what? Let’s get started!</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">forgot password</string>
+    <string name="question_sign_up">Don’t have account? Sign up</string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="standing">Standing</string>
+    <string name="profile">Profile</string>
+    <string name="premier_league">English Premier League</string>
+
+
+    <string name="recent_result">Recent Results</string>
+    <string name="next_fixtures">Next Fixtures</string>
+    <string name="current_standing">Current Standing</string>
+    <string name="try_again">Try again</string>
+    <string name="error_message">Error, Please try again</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="text_field_name">Name\n%s</string>
+    <string name="text_field_password">Password\n%s</string>
+    <string name="text_field_email">Email\n%s</string>
+    <string name="text_field_phone">Phone Number\n%s</string>
+    <string name="team">Team</string>
+    <string name="pts">Pts</string>
+    <string name="ga">GA</string>
+    <string name="gd">GD</string>
+    <string name="l">L</string>
+    <string name="d">D</string>
+    <string name="w">W</string>
+    <string name="p">P</string>
+    <string name="fixture">Fixture</string>
+    <string name="match_detail">Match Detail</string>
+    <string name="lineup">Line Up</string>
+</resources>

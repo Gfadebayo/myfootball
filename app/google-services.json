@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "770104485727",
+    "project_id": "exzell-football",
+    "storage_bucket": "exzell-football.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770104485727:android:e49799ddfc115ae0edb8ea",
+        "android_client_info": {
+          "package_name": "com.exzell.myfootball"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770104485727-7r85tl73a2jc0rvkgm1pgi06tlck6tot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhY8uHvJPGiooh4j1vWzDSW5e_bSq5wQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770104485727-7r85tl73a2jc0rvkgm1pgi06tlck6tot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

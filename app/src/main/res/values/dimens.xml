@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_drawable_padding">12dp</dimen>
+    <dimen name="profile_line_margin">32dp</dimen>
+
+<!--    The constraint percent for every other value in standing asides the team name-->
+    <dimen name="table_percent_others">0.075</dimen>
+    <dimen name="table_percent_team_name">0.4</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="home_titles">
+        <item>@string/recent_result</item>
+        <item>@string/next_fixtures</item>
+        <item>@string/current_standing</item>
+    </string-array>
+</resources>

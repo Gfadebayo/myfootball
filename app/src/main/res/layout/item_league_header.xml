@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/image_flag"
+        android:layout_width="42dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="12:12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:src="@drawable/ic_profile"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_country"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textSize="16sp"
+        app:fontFamily="@font/sourcesanspro_semibold"
+        app:layout_constraintStart_toEndOf="@id/image_flag"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/premier_league" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_league"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        android:textColor="@color/grey_alt"
+        app:layout_constraintStart_toStartOf="@id/text_country"
+        app:layout_constraintTop_toBottomOf="@id/text_country"
+        tools:text="@string/premier_league" />
+
+    <ImageView
+        android:id="@+id/view_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_keyboard_arrow_left"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

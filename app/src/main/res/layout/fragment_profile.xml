@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/image_profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            tools:src="@drawable/layer_splash"
+            tools:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/image_change_profile"
+            android:theme="@style/CurvedImageView100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="100dp"
+            android:src="@drawable/ic_edit"
+            android:layout_gravity="bottom|end"/>
+    </FrameLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        app:fontFamily="@font/sourcesanspro_semibold"
+        tools:text="Brian Imanuel" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/text_drawable_padding"
+        app:drawableStartCompat="@drawable/ic_profile"
+        app:drawableEndCompat="@drawable/rotate_keyboard_arrow_left_180"
+        app:layout_constraintTop_toBottomOf="@id/image_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Name\nBrian Manuel"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_marginHorizontal="@dimen/profile_line_margin"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        app:drawableStartCompat="@drawable/ic_message"
+        android:drawablePadding="@dimen/text_drawable_padding"
+        app:drawableEndCompat="@drawable/rotate_keyboard_arrow_left_180"
+        app:layout_constraintTop_toBottomOf="@id/text_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Email\nbrianmanuel23@gmail.com" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_marginHorizontal="@dimen/profile_line_margin"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:drawablePadding="@dimen/text_drawable_padding"
+        app:drawableStartCompat="@drawable/ic_call"
+        app:drawableEndCompat="@drawable/rotate_keyboard_arrow_left_180"
+        app:layout_constraintTop_toBottomOf="@id/text_mail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Phone\n+1 100 000 234" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_marginHorizontal="@dimen/profile_line_margin"/>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:colorBackground">@color/black_alt</item>
+
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnSurface">@color/grey_dark</item>
+        <item name="colorSurface">@color/black_alt</item>
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+
+        <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/BaseTextView</item>
+        <item name="textInputStyle">@style/BaseTextInputLayout</item>
+        <item name="checkboxStyle">@style/BaseMaterialCheckbox</item>
+        <item name="materialButtonStyle">@style/NoCaseButton</item>
+        <item name="bottomSheetDialogTheme">@style/CurvedBottomSheetDialog</item>
+        <item name="circularProgressIndicatorStyle">@style/BaseCircularIndicator</item>
+<!--        <item name="toolbarStyle">@style/BaseToolbar</item>-->
+
+        <item name="textAppearanceSubtitle1">@style/SourceSansSubtitleAppearance1</item>
+        <item name="textAppearanceCaption">@style/SourceSansCaptionTextAppearance</item>
+        <item name="textAppearanceHeadline6">@style/SourceSansHeadlineAppearance6</item>
+
+        <item name="homeAsUpIndicator">@drawable/ic_keyboard_arrow_left</item>
+
+        <item name="cornerSize">16dp</item>
+    </style>
+
+<!--    Application theme with Slash background-->
+    <style name="SplashTheme" parent="BaseTheme">
+        <item name="android:background">@drawable/layer_splash</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme">
+        <!-- Primary brand color. -->
+        <item name="colorPrimaryDark">?attr/colorPrimary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+
+        <item name="colorSurface">@color/blue</item>
+        <item name="colorOnSurface">@color/white</item>
+    </style>
+</resources>

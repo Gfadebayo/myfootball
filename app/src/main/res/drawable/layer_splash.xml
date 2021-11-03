@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/black_alt" />
+
+<!--    Because adding padding in the layer-list tag itself to move the drawable causes multiple to appear-->
+<!--        instead simply add that padding/margin to top of each item so they will move-->
+<!--    <item android:drawable="@android:color/transparent" android:width="291dp" android:height="338dp" />-->
+
+<!--    actual top is 48dp-->
+    <item android:width="276dp"
+        android:height="276dp"
+        android:top="72dp"
+        android:gravity="center_horizontal">
+
+        <shape android:shape="rectangle">
+            <corners android:radius="58dp" />
+
+            <solid android:color="@color/black" />
+
+            <size android:height="27dp" android:width="27dp" />
+        </shape>
+    </item>
+
+<!--    actual top is 215dp-->
+    <item android:width="24dp"
+        android:height="24dp"
+        android:gravity="center_horizontal"
+        android:left="276dp"
+        android:top="239dp">
+
+        <shape android:shape="rectangle">
+            <corners android:radius="24dp" />
+            <solid android:color="@color/blue" />
+        </shape>
+    </item>
+
+<!--    actual top is 0dp-->
+    <item android:width="16dp"
+        android:height="16dp"
+        android:gravity="center_horizontal"
+        android:right="235dp"
+        android:bottom="2dp"
+        android:top="24dp">
+
+        <shape android:shape="rectangle">
+            <corners android:radius="24dp" />
+            <solid android:color="?attr/colorOnBackground" />
+        </shape>
+    </item>
+
+<!--    actual top is 302dp-->
+    <item android:width="16dp"
+        android:height="16dp"
+        android:gravity="center_horizontal"
+        android:top="326dp"
+        android:right="244dp">
+
+        <shape android:shape="rectangle">
+            <corners android:radius="24dp" />
+            <solid android:color="?attr/colorOnBackground" />
+        </shape>
+    </item>
+
+<!--    actual top is 0dp-->
+    <item android:drawable="@drawable/mbappe"
+        android:gravity="center_horizontal"
+        android:width="226dp"
+        android:height="325dp"
+        android:top="24dp"/>
+</layer-list>

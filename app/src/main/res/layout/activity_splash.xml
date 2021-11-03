@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/SplashNoBackground"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="40dp"
+    android:gravity="bottom"
+    android:paddingBottom="62dp"
+    android:visibility="gone">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/splash_message"
+        android:textSize="40sp"
+        android:textColor="?attr/colorOnBackground"
+        app:fontFamily="@font/sourcesanspro_semibold"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_sub_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/splash_sub_message"
+        android:textColor="@color/grey_dark"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_sign_in"
+            android:layout_width="199dp"
+            android:layout_height="match_parent"
+            android:text="@string/sign_in"
+            android:textColor="?attr/colorOnBackground"
+            app:backgroundTint="?attr/colorSecondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:text="@string/sign_up"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/sourcesanspro_regular"
+            app:backgroundTint="@android:color/transparent"/>
+    </FrameLayout>
+</LinearLayout>
